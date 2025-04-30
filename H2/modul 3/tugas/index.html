@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Modul 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Kalkulator Sederhana</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Bilangan Pertama</td>
+                <td>:</td>
+                <td><input type="number" id="bil1"></td>
+            </tr>
+            <tr>
+                <td>Bilangan Kedua</td>
+                <td>:</td>
+                <td><input type="number" id="bil2"></td>
+            </tr>
+            <tr>
+                <td>Pilih Operasi</td>
+                <td>:</td>
+                <td><select id="operasi" name="operasi">
+                    <option value="penjumlahan">Penjumlahan (+)</option>
+                    <option value="pengurangan">pengurangan (-)</option>
+                    <option value="perkalian">perkalian (&times;)</option>
+                    <option value="pembagian">pembagian (&divide;)</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="right">
+                    <input type="button" value="Hitung" onclick="calculate()">
+                </td>
+                <td></td>
+                <td><input type="reset" value="Ulang"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
